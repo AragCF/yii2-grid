@@ -26,7 +26,7 @@ abstract class BaseManager extends Component implements ManagerInterface
     public function init()
     {
         parent::init();
-        $this->storage = Instance::ensure($this->storage, 'bupy7\grid\interfaces\StorageInterface');
+        $this->storage = Instance::ensure($this->storage);
     }
     
     /**
